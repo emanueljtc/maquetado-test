@@ -1,0 +1,60 @@
+@import '../../../utils/colors';
+@import '../../../utils/breakpoints';
+.about-product {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  @include md {
+    padding: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-1 {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include md {
+      margin-bottom: 0;
+      padding: 8rem;
+    }
+    @include ipad {
+      padding: 1rem;
+    }
+    .title {
+      width: 100%;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      @include md {
+        font-size: 2rem;
+        width: 70%;
+      }
+      @include ipad {
+        width: 100%;
+      }
+      .span {
+        color: $red;
+      }
+    }
+    .text {
+      color: $gray;
+    }
+  }
+
+  .col-2 {
+    width: 100%;
+    .content-image {
+      .image {
+        width: 100%;
+        height: 35rem;
+        border-radius: 2%;
+        -webkit-border-radius: 2%;
+        -moz-border-radius: 2%;
+        -ms-border-radius: 2%;
+        -o-border-radius: 2%;
+      }
+    }
+  }
+}
