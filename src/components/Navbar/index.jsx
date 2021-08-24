@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="navbar-logo">
           <span className="name">audiophile</span>
         </div>
-        <div className="navbar-links">
+        <nav className="navbar-links">
           {navigation.map((item, index) => {
             return (
               <div className="content-link" key={index}>
@@ -42,7 +42,7 @@ const Navbar = () => {
               </div>
             );
           })}
-        </div>
+        </nav>
         <div className="navbar-extras">
           <HiOutlineShoppingCart />
         </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       {showMenuMobile ? (
-        <div className="navbar-mobile animate__animated animate__fadeInDown">
+        <nav className="navbar-mobile animate__animated animate__fadeInDown">
           {navigation.map((item, index) => {
             return (
               <div className="content-link" key={index}>
@@ -61,7 +61,7 @@ const Navbar = () => {
               </div>
             );
           })}
-        </div>
+        </nav>
       ) : (
         ''
       )}
