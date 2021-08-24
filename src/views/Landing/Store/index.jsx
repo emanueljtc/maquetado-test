@@ -3,7 +3,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import { air, ear, markI, speak, speaker, xx59 } from '../../../assets/images';
 import './styles.scss';
 const Store = () => {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: 1,
       title: 'xx99 mark i',
