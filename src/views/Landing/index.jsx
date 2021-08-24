@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import AboutProduct from './AboutProduct'
 import DetailsProducts from './DetailsProducts'
@@ -13,6 +14,7 @@ const Landing = () => {
             <Feactures />
             <Store />
             <AboutProduct />
+            <Footer />
         </>
     )
 }
