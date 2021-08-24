@@ -1,0 +1,106 @@
+@import '../../../utils/colors';
+@import '../../../utils/breakpoints';
+.store {
+  padding: 1rem;
+  @include md {
+    padding: 6rem;
+  }
+  .content-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      @include md {
+        font-size: 2rem;
+      }
+      &.fz-1{
+          font-size: 1.5rem;
+      }
+      &.mt-1 {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .item-type-one {
+      .content-image {
+        width: 100%;
+        .image {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 2%;
+          -webkit-border-radius: 2%;
+          -moz-border-radius: 2%;
+          -ms-border-radius: 2%;
+          -o-border-radius: 2%;
+        }
+      }
+      .content-btn {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          padding: 1rem;
+          padding-left: 3rem;
+          padding-right: 3rem;
+          background-color: $red;
+          color: $white;
+          text-transform: uppercase;
+          border: none;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .item-type-two {
+      width: 100%;
+      .image {
+        width: 50%;
+      }
+      .content-main {
+        height: auto;
+        position: relative;
+        // background-color: $gray-ligth;
+        background-position-y: 6rem;
+        background-repeat: no-repeat;
+        background-image: url('../../../assets/images/fondo.png');
+        .content-image {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 266px;
+        }
+        .content-btn {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 1rem;
+          color: $red;
+
+          .text-action {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

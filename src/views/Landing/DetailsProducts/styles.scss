@@ -1,0 +1,115 @@
+@import '../../../utils/colors';
+@import '../../../utils/breakpoints';
+.details-products {
+  padding: 1rem;
+  @include md {
+    padding: 6rem;
+  }
+  .content-go-back {
+    width: 100%;
+    .go-back {
+      color: $gray;
+      text-decoration: none;
+      text-transform: capitalize;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+    .details-image {
+      width: 100%;
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2%;
+        -webkit-border-radius: 2%;
+        -moz-border-radius: 2%;
+        -ms-border-radius: 2%;
+        -o-border-radius: 2%;
+      }
+    }
+    .details-text {
+      padding: 0;
+      padding-top: 2rem;
+      @include md {
+        padding: 8rem;
+        padding-top: 6rem;
+      }
+      @include ipad {
+        padding-top: 1rem;
+        padding: 2rem;
+      }
+      .subtitle {
+        text-transform: uppercase;
+        color: $red;
+        margin-bottom: 1rem;
+      }
+      .title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        @include md {
+          width: 50%;
+          font-size: 2rem;
+        }
+        @include ipad {
+          width: 70%;
+        }
+      }
+      .text {
+        margin-top: 1rem;
+        color: $gray;
+      }
+
+      .price {
+        font-weight: 500;
+        margin-top: 1rem;
+      }
+      .content-cart {
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+        .cart {
+          display: flex;
+          align-items: center;
+          background-color: $gray-ligth;
+          justify-content: center;
+          @include md {
+            width: 20%;
+          }
+          .count {
+            color: $gray;
+          }
+          .inp {
+            width: 60%;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: transparent;
+            border: none;
+            color: $black;
+            text-align: center;
+            font-weight: 500;
+          }
+        }
+        .btn-add {
+          padding: 1rem;
+          padding-left: 3rem;
+          padding-right: 3rem;
+          background-color: $red;
+          color: $white;
+          text-transform: uppercase;
+          border: none;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
